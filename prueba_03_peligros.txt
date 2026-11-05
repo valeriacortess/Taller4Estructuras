@@ -1,6 +1,7 @@
 1.0 0.2
-4
+5
 Tierra 0 0 0 1.0 1 Miller
-Miller 1 0 0 1.0 2 Tierra Mann
-Mann 3 0 0 1.0 1 Miller
-Edmunds 6 0 0 1.0 0
+Miller 1 0 0 1.0 3 Tierra Mann Edmunds
+Mann 4 0 0 1.0 1 Miller
+Edmunds 6 0 0 1.0 1 Miller
+Hornet 0 3 0 1.0 0
