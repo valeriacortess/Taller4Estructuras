@@ -16,8 +16,8 @@ void Mision::registrar(int origen, int destino){
       if (!desplazamientos.empty()){
         acumulado = desplazamientos.back().obtenerAcumulado() + a.combustible;
     }
-  int numero = desplazamientos.size + 1;
-  desplazamientos.push_back(Desplazamiento(numero, Universo.obtenerPlaneta(origen).obtenerNombre(), Universo.obtenerPlaneta(destino).obtenerNombre(), a.distancia, a.gravitacional, a.combustible, a.peligrosa, acumulado));
+  int numero = desplazamientos.size() + 1;
+  desplazamientos.push_back(Desplazamiento(numero, universo.obtenerPlaneta(origen).obtenerNombre(), universo.obtenerPlaneta(destino).obtenerNombre(), a.distancia, a.gravitacional, a.combustible, a.peligrosa, acumulado));
   recorrido.push_back(destino);
 }
 
@@ -26,7 +26,7 @@ void Mision::ejecutar(){
   recorrido.clear();
 
   int n = grafo.cantidadNodos();
-  int tierra = Universo.obtenerIndice("Tierra");
+  int tierra = universo.obtenerIndice("Tierra");
 
   vector<bool> visitado(n, false);
   visitado[tierra] = true;
