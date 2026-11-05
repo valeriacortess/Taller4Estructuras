@@ -17,10 +17,10 @@ public:
     Planeta(const string& nombre, double x, double y, double z, double t);
 
     const string& obtenerNombre() const;
-    double getX() const;
-    double getY() const;
-    double getZ() const;
-    double getT() const;
+    double obtenerX() const;
+    double obtenerY() const;
+    double obtenerZ() const;
+    double obtenerT() const;
     const vector<string>& obtenerPeligrosos() const;
 
     void agregarPeligroso(const string& destino);
