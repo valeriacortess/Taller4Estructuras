@@ -15,7 +15,7 @@ private:
   vector<Desplazamiento> desplazamientos;
   vector<int> recorrido;
 
-void registrar(int origen, int destino); //enteros para trabajar con índices únicamente en esta parte, al mostrar en pantalla se muestran Strings.
+void registrar(int origen, int destino); 
 
 public:
   Mision(const Universo& universo, const Grafo& grafo);
